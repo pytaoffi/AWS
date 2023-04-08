@@ -11,10 +11,6 @@
         die("Connessione fallita: " . $conn->connect_error);
     }
 
-    $salt = "sistemi2023";
-
-    function saltChar() {
-        echo $GLOBALS['salt'];
-    }
+    
 
 ?>

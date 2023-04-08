@@ -7,4 +7,11 @@
         return $data;
     }
 
+    
+
+    function saltChars(){
+        $salt='sistemi2023';
+        return $salt;
+    }
+
 ?>

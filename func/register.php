@@ -30,7 +30,7 @@
                 $message = "Email già presente";
                 echo "<script>if(confirm('$message')){document.location.href='../public/register.html'};</script>";  
             }else{
-                $hashed_password=hash('sha256', $password.saltChar());
+                $hashed_password=hash('sha256', $password.saltChars());
                 
                 $stmt = $conn->prepare("INSERT INTO account (nome, cognome, username, email, password) VALUES (?, ?, ?, ?, ?)");
                 $stmt->bind_param("sssss", $nome, $cognome, $username, $email, $hashed_password);
