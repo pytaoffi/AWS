@@ -4,7 +4,8 @@ AWS - Amazon WOW Services
 Tecnologie usate:
   - HTML 5: per la struttura del sito web.
   - CSS 3: per gli abbellimenti grafici (sfondo e bottoni).
-  - PHP 8.0 per la gestione server-side.
+  - PHP 8.0: per la gestione server-side.
+  - MYSQL: per la gestione del database.
   - Docker 3: per la virtualizzazione dei servizi (mysql, phpmyadmin, apache, php 8).
 
 Struttura della repository:
