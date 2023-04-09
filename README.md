@@ -2,10 +2,10 @@
 AWS - Amazon WOW Services
 
 Tecnologie usate:
-  - HTML 5: per la struttura del sito web
-  - CSS 3: per gli abbellimenti grafici (sfondo e bottoni)
-  - PHP 8.0 per la gestione server-side
-  - Docker 3: per la virtualizzazione dei servizi (mysql, phpmyadmin, apache, php 8)
+  - HTML 5: per la struttura del sito web.
+  - CSS 3: per gli abbellimenti grafici (sfondo e bottoni).
+  - PHP 8.0 per la gestione server-side.
+  - Docker 3: per la virtualizzazione dei servizi (mysql, phpmyadmin, apache, php 8).
 
 Struttura della repository:
   - Nella root folder di "aws" troviamo il file "index.html" che ti farà scegliere tra il login e la registrazione, il "docker-compose.yml" utilizzato per avviare e gestire l'intera applicazione e il "Dockerfile" che contiene la dipendenza per l'installazione di php 8.
