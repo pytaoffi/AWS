@@ -1,6 +1,20 @@
 # AWS
 AWS - Amazon WOW Services
 
+/*
+
+CREDENZIALI:
+
+Prof. Prevedello:
+  - Username: dPrevedello
+  - Password: password
+
+Prof. Scopacasa:
+  - Username: dPrevedello
+  - Password: password
+  
+*/
+
 Tecnologie usate:
   - HTML 5: per la struttura del sito web.
   - CSS 3: per gli abbellimenti grafici (sfondo e bottoni).
