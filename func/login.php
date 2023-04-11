@@ -1,7 +1,7 @@
 <?php
     session_start();
     require '../config/connection.php';
-    require '../config/utility.php';
+    require 'utility.php';
 
     $username=sanitizeString(mysqli_real_escape_string($conn, $_POST["username"]));
     $password=sanitizeString(mysqli_real_escape_string($conn, $_POST["password"]));
@@ -16,7 +16,7 @@
         $message = "Nome utente inesistente";
         echo "<script>if(confirm('$message')){document.location.href='../public/login.html'};</script>";
     }else{
-        $hashed_password=hash('sha256', $password.saltChars());
+        $hashed_password=hash('ripemd160', $password.saltChars());
         $stmt = $conn->prepare("SELECT * FROM account WHERE username LIKE ? AND password LIKE ?");
         $stmt->bind_param("ss", $username, $hashed_password);
         $stmt->execute();

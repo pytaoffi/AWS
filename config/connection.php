@@ -1,5 +1,5 @@
 <?php
-    $hostname="34.207.84.117";
+    $hostname="54.174.106.150";
     $username="user";
     $password="pass";
     $database="aws_cc";

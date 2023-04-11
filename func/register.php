@@ -1,6 +1,6 @@
 <?php
     require '../config/connection.php';
-    require '../config/utility.php';
+    require 'utility.php';
 
     $nome=sanitizeString(mysqli_real_escape_string($conn, $_POST["nome"]));
     $cognome=sanitizeString(mysqli_real_escape_string($conn, $_POST["cognome"]));
@@ -10,7 +10,6 @@
     
     if(isset($_POST['check'])){
 
-        // Check if the email or username already exist in the database
         $stmt = $conn->prepare("SELECT * FROM account WHERE username LIKE ?");
         $stmt->bind_param("s", $username);
         $stmt->execute();
@@ -30,7 +29,7 @@
                 $message = "Email già presente";
                 echo "<script>if(confirm('$message')){document.location.href='../public/register.html'};</script>";  
             }else{
-                $hashed_password=hash('sha256', $password.saltChars());
+                $hashed_password=hash('ripemd160', $password.saltChars());
                 
                 $stmt = $conn->prepare("INSERT INTO account (nome, cognome, username, email, password) VALUES (?, ?, ?, ?, ?)");
                 $stmt->bind_param("sssss", $nome, $cognome, $username, $email, $hashed_password);
