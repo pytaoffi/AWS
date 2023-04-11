@@ -10,7 +10,7 @@ Prof. Prevedello:
   - Password: password
 
 Prof. Scopacasa:
-  - Username: dPrevedello
+  - Username: rScopacasa
   - Password: password
   
 */
